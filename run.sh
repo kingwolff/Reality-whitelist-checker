@@ -27,8 +27,6 @@ systemctl daemon-reload
 # Enable and start Sing-Box service
 systemctl enable --now sing-box &&
 sleep 0.2 &&
-systemctl status sing-box &&
-sleep 0.2 &&
 systemctl restart --now sing-box
 
 curl -Lo /root/run_server.sh https://raw.githubusercontent.com/randomguy-on-internet/Reality-whitelist-checker/main/run_server.sh &&
